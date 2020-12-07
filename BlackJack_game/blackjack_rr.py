@@ -149,9 +149,11 @@ def push(player, dealer):
 
 
 # GAMEPLAY
+game = True
+
 player_chips = Chips()
 
-while True:
+while game:
 
     print("\t              **********************************************************")
     print(
@@ -230,4 +232,4 @@ while True:
     else:
         print(
             "Oops! You have bet all your chips and we are sorry you can't play more.\nThanks for playing! Do come again to Casino BLACK JACK!")
-        break
+        game = False
